@@ -1,0 +1,96 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Gloss (1.2.4)
+  - GRMustache.swift (2.0.0)
+  - MobileCacheSDK (0.1.0):
+    - MobileCacheSDK/Core (= 0.1.0)
+    - MobileCacheSDK/RKSupport (= 0.1.0)
+    - MobileCacheSDK/RSRPSupport (= 0.1.0)
+    - MobileCacheSDK/RSTBSupport (= 0.1.0)
+  - MobileCacheSDK/Core (0.1.0):
+    - Alamofire (~> 4)
+    - SecureQueue
+  - MobileCacheSDK/RKSupport (0.1.0):
+    - MobileCacheSDK/Core
+    - ResearchKit (~> 1.5)
+    - ResearchSuiteExtensions (~> 0.7)
+  - MobileCacheSDK/RSRPSupport (0.1.0):
+    - Gloss (~> 1)
+    - MobileCacheSDK/Core
+    - ResearchSuiteResultsProcessor (~> 0.8)
+  - MobileCacheSDK/RSTBSupport (0.1.0):
+    - Gloss (~> 1)
+    - MobileCacheSDK/Core
+    - MobileCacheSDK/RKSupport
+    - ResearchSuiteTaskBuilder
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - ResearchKit (1.5.2)
+  - ResearchSuiteExtensions (0.9.0):
+    - ResearchSuiteExtensions/Common (= 0.9.0)
+    - ResearchSuiteExtensions/Core (= 0.9.0)
+    - ResearchSuiteExtensions/RSTBSupport (= 0.9.0)
+  - ResearchSuiteExtensions/Common (0.9.0):
+    - ResearchKit (~> 1.4)
+  - ResearchSuiteExtensions/Core (0.9.0):
+    - ResearchKit (~> 1.4)
+    - ResearchSuiteExtensions/Common
+  - ResearchSuiteExtensions/RSTBSupport (0.9.0):
+    - Gloss (~> 1)
+    - GRMustache.swift (~> 2.0)
+    - ResearchSuiteExtensions/Core
+    - ResearchSuiteTaskBuilder (~> 0.4)
+    - SwiftyMarkdown (~> 0.3)
+  - ResearchSuiteResultsProcessor (0.8.0):
+    - ResearchSuiteResultsProcessor/Core (= 0.8.0)
+  - ResearchSuiteResultsProcessor/Core (0.8.0):
+    - Gloss (~> 1.1)
+    - ResearchKit (~> 1.3)
+  - ResearchSuiteTaskBuilder (0.9.0):
+    - Gloss (~> 1.1)
+    - ResearchKit (~> 1.3)
+  - SecureQueue (0.0.5)
+  - SwiftyMarkdown (0.5.1)
+
+DEPENDENCIES:
+  - MobileCacheSDK (from `../`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - ResearchSuiteExtensions (from `https://github.com/ResearchSuite/ResearchSuiteExtensions-iOS`, tag `0.9.0`)
+  - ResearchSuiteResultsProcessor (from `https://github.com/ResearchSuite/ResearchSuiteResultsProcessor-ios`, tag `0.8.0`)
+
+EXTERNAL SOURCES:
+  MobileCacheSDK:
+    :path: ../
+  ResearchSuiteExtensions:
+    :git: https://github.com/ResearchSuite/ResearchSuiteExtensions-iOS
+    :tag: 0.9.0
+  ResearchSuiteResultsProcessor:
+    :git: https://github.com/ResearchSuite/ResearchSuiteResultsProcessor-ios
+    :tag: 0.8.0
+
+CHECKOUT OPTIONS:
+  ResearchSuiteExtensions:
+    :git: https://github.com/ResearchSuite/ResearchSuiteExtensions-iOS
+    :tag: 0.9.0
+  ResearchSuiteResultsProcessor:
+    :git: https://github.com/ResearchSuite/ResearchSuiteResultsProcessor-ios
+    :tag: 0.8.0
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  GRMustache.swift: 8a547c12bea16052071b2b540af83d770075f0eb
+  MobileCacheSDK: fee8d183d72a140410e497015f03262690c47d0c
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ResearchKit: a5770681dd61afddd3d1f24d232b9abf00cba454
+  ResearchSuiteExtensions: 73f548e4ffe8fd35664ffba0cde554f196185908
+  ResearchSuiteResultsProcessor: 3d264125fc667cb0e11f21badd01b3ee2f02ad2c
+  ResearchSuiteTaskBuilder: d42b7d20a24c6da29b8585c97a694733c437322b
+  SecureQueue: 3aa95a5bba534c3aa938ae634333cbcf5919060b
+  SwiftyMarkdown: 743af3e87931391bc4836b825fec3d98785b2e3a
+
+PODFILE CHECKSUM: 4f0afd15817ae3bc246f5705a616880b8c684925
+
+COCOAPODS: 1.3.1

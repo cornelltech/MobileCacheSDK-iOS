@@ -1,0 +1,6 @@
+framework module Pods_MobileCacheSDK_Example {
+  umbrella header "Pods-MobileCacheSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

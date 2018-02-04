@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MobileCacheSDK
 //
-//  Created by jdkizer9 on 01/17/2018.
+//  Created by jdkizer9 on 1/17/2018.
 //  Copyright (c) 2018 jdkizer9. All rights reserved.
 //
 

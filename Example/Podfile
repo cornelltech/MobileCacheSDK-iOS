@@ -1,7 +1,11 @@
 use_frameworks!
+platform :ios, '10.0'
 
 target 'MobileCacheSDK_Example' do
   pod 'MobileCacheSDK', :path => '../'
+
+  pod "ResearchSuiteExtensions", :git => 'https://github.com/ResearchSuite/ResearchSuiteExtensions-iOS', :tag => '0.9.0'
+  pod 'ResearchSuiteResultsProcessor', :git => 'https://github.com/ResearchSuite/ResearchSuiteResultsProcessor-ios', :tag => '0.8.0'
 
   target 'MobileCacheSDK_Tests' do
     inherit! :search_paths

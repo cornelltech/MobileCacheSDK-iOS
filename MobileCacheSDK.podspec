@@ -28,15 +28,36 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/jdkizer9/MobileCacheSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'MobileCacheSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MobileCacheSDK' => ['MobileCacheSDK/Assets/*.png']
-  # }
+  s.subspec 'Core' do |core|
+    core.source_files = 'Source/Core/**/*'
+    # core.dependency 'OMHClient', '~> 0.1'
+    core.dependency 'SecureQueue'
+    core.dependency 'Alamofire', '~> 4'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.subspec 'RKSupport' do |rks|
+  #   rks.source_files = 'Source/RKSupport/**/*'
+  #   rks.dependency 'MobileCacheSDK/Core'
+  #   rks.dependency 'ResearchKit', '~> 1.5'
+  #   rks.dependency 'ResearchSuiteExtensions', '~> 0.7'
+  # end
+
+  s.subspec 'RSTBSupport' do |rstb|
+    rstb.source_files = 'Source/RSTBSupport/**/*'
+    rstb.dependency 'MobileCacheSDK/Core'
+    # rstb.dependency 'MobileCacheSDK/RKSupport'
+    rstb.dependency 'ResearchSuiteTaskBuilder'
+    rstb.dependency 'Gloss', '~> 1'
+    rstb.dependency 'ResearchSuiteExtensions', '~> 0.7'
+  end
+
+  s.subspec 'RSRPSupport' do |rsrp|
+    rsrp.source_files = 'Source/RSRPSupport/**/*'
+    rsrp.dependency 'MobileCacheSDK/Core'
+    rsrp.dependency 'ResearchSuiteResultsProcessor', '~> 0.8'
+    rsrp.dependency 'Gloss', '~> 1'
+  end
+
 end
